@@ -4,6 +4,7 @@ body {
 }
 .navbar {
   display: flex;
+  box-sizing: border-box; /*optional */
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
   background-color: #264452;
@@ -13,6 +14,7 @@ body {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
 }
+
 .logo,
 .nav,
 .log {
@@ -22,13 +24,22 @@ body {
 .logo {
   margin-left: 2vw;
 }
+.naav {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;
+  left: 35%;
+}
 .log {
   margin-right: 2vw;
 }
-.nav h4 {
-  margin: 0vw 2vw;
+.nav {
+  gap: 2em;
 }
-.logo img {
+.logo a img {
   width: 4em;
   height: 4em;
 }
@@ -36,9 +47,13 @@ body {
 .log button {
   margin: 0vw 0.2vw;
 }
-.logo h2 {
+.logo a h2 {
   margin-left: 1vw;
   color: #aec2cb;
+}
+.logo a {
+  display: flex;
+  text-decoration: none;
 }
 
 #txt {
@@ -55,6 +70,7 @@ body {
 }
 .nav h4 a:active {
   border-color: #1b8fc3;
+  text-decoration: underline;
 }
 
 .button {
@@ -120,4 +136,115 @@ body {
 .button:active:before,
 .button:active:after {
   background: #1b8fc3;
+}
+
+.toggle-DropDown {
+  display: none;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 5vw;
+  /* border: 2px solid black; */
+  padding: 1vw;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #aec2cb;
+}
+.toggle-DropDown:hover {
+  color: #1b8fc3;
+  opacity: 60%;
+}
+
+@media (max-width: 864px) {
+  .toggle-DropDown {
+    display: block;
+    cursor: pointer;
+  }
+  .toggle-DropDown.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .toggle-DropDown.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .toggle-DropDown.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .naav {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #264452;
+    width: 100%;
+    /* text-align: center; */
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .nav {
+    display: block;
+    text-align: center;
+  }
+  .log {
+    /* display: block; */
+    justify-content: center;
+    margin: 10px;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .naav.active {
+    left: 0;
+  }
+}
+
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  height: 50vh;
+  margin-top: 4vh;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50vh;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }
