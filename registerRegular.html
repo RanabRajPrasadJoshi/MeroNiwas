@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/registerRegular.css" />
+    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
+    <title>Register To - MeroNiwas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="Assets/Logo.png" alt="Mero Niwas Logo" class="logo" />
+      </div>
+      <div class="brand">
+        <h2>
+          Register To
+          <h2 id="txtt">Mero</h2>
+          <h2 id="txt">Niwas</h2>
+        </h2>
+      </div>
+      <form id="registration-form" enctype="multipart/form-data">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="contactnumber">Contact Number</label>
+        <input type="number" id="contactnumber" name="contactnumber" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="profile-picture">Profile Picture (Optional)</label>
+        <input
+          type="file"
+          id="profile-picture"
+          name="profile-picture"
+          accept="image/*"
+        />
+
+        <button type="submit">Register Regular user</button>
+        <div class="links">
+          <a href="login.html">Already have account? Login now</a>
+        </div>
+        <div class="links" id="back-to-home">
+          <a href="index.html">Back to home</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="JS/registerRegular.js"></script>
+  </body>
+</html>

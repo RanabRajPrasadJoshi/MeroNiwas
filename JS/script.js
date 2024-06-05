@@ -40,5 +40,5 @@ function login() {
   window.location.href = "../login.html";
 }
 function register() {
-  window.location.href = "../register.html";
+  window.location.href = "../selectRegister.html";
 }
