@@ -7,7 +7,16 @@ body {
   height: 100vh;
   margin: 0;
 }
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10vw;
+}
 
+.containerSvg img {
+  width: 50vw;
+  /* margin-right: 10vw; */
+}
 .container {
   background-color: #264452;
   padding: 2rem;
@@ -87,4 +96,9 @@ button:hover {
 
 .links a:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .containerSvg {
+    display: none;
+  }
 }
