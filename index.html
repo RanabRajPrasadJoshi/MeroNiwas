@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon" />
     <title>
       Mero Niwas - Sajilo Khoj, Sajilo Basai sangei Bharosa, Suvidha Ra Aaram
     </title>
@@ -20,8 +20,7 @@
       <nav class="navbar">
         <div class="logo">
           <a href="index.html">
-            <img src="Assets/Logo.png" alt="Error loading" />
-
+            <img src="Assets/Logo.png" alt="Logo" />
             <h2 id="ttxt">Mero</h2>
             <h2 id="txt">Niwas</h2>
           </a>
@@ -30,14 +29,14 @@
           <div class="nav">
             <h4 class="nav-item"><a href="index.html">Home</a></h4>
             <h4 class="nav-item"><a href="#">Product</a></h4>
-            <h4 class="nav-item"><a href="ContactUs.html">Contact us</a></h4>
-            <h4 class="nav-item"><a href="#">About us</a></h4>
+            <h4 class="nav-item"><a href="ContactUs.html">Contact Us</a></h4>
+            <h4 class="nav-item"><a href="#">About Us</a></h4>
           </div>
           <div class="log">
-            <button type="submit" class="button nav-item" onclick="login()">
+            <button type="submit" class="nav-item log-btn" onclick="login()">
               Login
             </button>
-            <button type="submit" class="button nav-item" onclick="register()">
+            <button type="submit" class="nav-item log-btn" onclick="register()">
               Register
             </button>
           </div>
@@ -49,24 +48,179 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <div class="slideshow-container">
-        <div class="mySlides1">
-          <img src="Assets/1.jpg" style="width: 100%" />
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Find your perfect home</h1>
+          <p>
+            Your perfect home is our priority, make it your priority as well
+          </p>
+          <div class="hero-buttons">
+            <button class="button">Talk To Agent</button>
+            <button class="button">See Our Contact</button>
+          </div>
         </div>
+      </section>
 
-        <div class="mySlides1">
-          <img src="Assets/2.jpg" style="width: 100%" />
+      <hr class="section-divider" />
+
+      <section class="properties">
+        <h2>
+          Whether you’re buying or renting, we have a wide selection of
+          properties for you to choose from. Explore and find your dream home
+          now.
+        </h2>
+        <div class="property-options">
+          <div class="property-card">
+            <img src="Assets/Product1.jpeg" alt="For Rent" />
+            <button class="button">For Rent</button>
+          </div>
+          <div class="property-card">
+            <img src="Assets/Product2.jpeg" alt="For Rent" />
+            <button class="button">For Rent</button>
+          </div>
+          <div class="property-card">
+            <img src="Assets/Product3.jpeg" alt="For Rent" />
+            <button class="button">For Rent</button>
+          </div>
         </div>
+      </section>
 
-        <div class="mySlides1">
-          <img src="Assets/3.jpg" style="width: 100%" />
+      <hr class="section-divider" />
+
+      <section class="why-us">
+        <h2>Why choose us</h2>
+        <div class="features">
+          <div class="feature-row">
+            <div class="feature">
+              <img
+                src="Assets/Whyproperties.jpeg"
+                alt="Best properties in town"
+              />
+              <h3>Best properties in town</h3>
+              <p>
+                We are nothing if not passionate! Real estate is our pride and
+                joy. Let us use that passion to find you the perfect home you’ll
+                feel passionate about.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="Assets/WhyPassion.png" alt="Passion for the work" />
+              <h3>Passion for the work</h3>
+              <p>
+                We are nothing if not passionate! Real estate is our pride and
+                joy. Let us use that passion to find you the perfect home you’ll
+                feel passionate about.
+              </p>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature">
+              <img src="Assets/Why3.jpeg" alt="Top tier realtors" />
+              <h3>Top tier realtors</h3>
+              <p>
+                We are nothing if not passionate! Real estate is our pride and
+                joy. Let us use that passion to find you the perfect home you’ll
+                feel passionate about.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="Assets/Why4.jpg" alt="Personal dedication" />
+              <h3>Personal dedication</h3>
+              <p>
+                We are nothing if not passionate! Real estate is our pride and
+                joy. Let us use that passion to find you the perfect home you’ll
+                feel passionate about.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-      </div>
+      <hr class="section-divider" />
+
+      <section class="solutions">
+        <h2>We have solutions for you</h2>
+        <div class="solutions-options">
+          <div class="solution">
+            <img
+              src="https://images.pexels.com/photos/3646194/pexels-photo-3646194.jpeg"
+              alt="For sellers"
+            />
+            <h3>For sellers</h3>
+            <p>
+              Looking to sell your home but don’t want to waste time or
+              compromise on price? Haus group specializes in selling properties,
+              finding you the best buyer in no time.
+            </p>
+            <button class="button">Contact Us</button>
+          </div>
+          <div class="solution">
+            <img
+              src="https://images.pexels.com/photos/259098/pexels-photo-259098.jpeg"
+              alt="For landlords"
+            />
+            <h3>For landlords</h3>
+            <p>
+              Renting out your property shouldn’t be hard. Find the perfect
+              tenant and protect your investment without your property remaining
+              vacant for a long period of time.
+            </p>
+            <button class="button">Contact Us</button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="about-us">
+        <h2>About Us</h2>
+        <p>
+          Founded in 2010, Haus group, an innovative real estate firm, operating
+          under the permission of the Ministry of Economy, specializes in
+          pairing dedicated agents with real estate clients to offer a unique
+          experience.
+        </p>
+        <img
+          src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+          alt="About Us"
+        />
+      </section>
     </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            Founded in 2010, Mero Niwas is a real estate firm specializing in
+            pairing dedicated agents with clients to offer a unique experience.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Mero Niwas. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="JS/script.js"></script>
   </body>
