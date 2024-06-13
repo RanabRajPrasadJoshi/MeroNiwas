@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mero Niwas</title>
+    <link rel="stylesheet" href="CSS/Product.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Assets/Logo.png" alt="Logo" />
+          <h2 id="ttxt">Mero</h2>
+          <h2 id="txt">Niwas</h2>
+        </a>
+      </div>
+      <div class="naav">
+        <div class="nav">
+          <h4 class="nav-item"><a href="index.html">Home</a></h4>
+          <h4 class="nav-item"><a href="#">Product</a></h4>
+          <h4 class="nav-item"><a href="ContactUs.html">Contact Us</a></h4>
+          <h4 class="nav-item"><a href="#">About Us</a></h4>
+        </div>
+        <div class="log">
+          <button type="submit" class="nav-item log-btn" onclick="login()">
+            Login
+          </button>
+          <button type="submit" class="nav-item log-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+      </div>
+      <div class="toggle-DropDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <main>
+      <header>
+        <nav>
+          <div class="container1">
+            <div class="nav-wrapper">
+              <ul class="nav-links">
+                <li><a href="cart.html" class="nav-link">My Cart</a></li>
+              </ul>
+              <div class="container">
+                <div class="sort-options">
+                  <label for="sort-select">Sort by:</label>
+                  <select id="sort-select">
+                    <option value="top-sales">Top Sales</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                  </select>
+                  <button id="filter-btn">Filter</button>
+                </div>
+              </div>
+              <form class="search-form">
+                <input type="text" placeholder="Search..." />
+                <button type="button">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="product-list" class="product-list"></div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            Founded in 2010, Mero Niwas is a real estate firm specializing in
+            pairing dedicated agents with clients to offer a unique experience.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Mero Niwas. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="JS/Product.js"></script>
+  </body>
+</html>
